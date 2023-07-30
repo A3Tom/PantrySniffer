@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PS.Common.Commands\PS.Common.Commands.csproj" />
+    <ProjectReference Include="..\PS.Common.Domain\PS.Common.Domain.csproj" />
+    <ProjectReference Include="..\PS.Common.Infrastructure\PS.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\PS.Common.Queries\PS.Common.Queries.csproj" />
+    <ProjectReference Include="..\PS.ShoppingService.Data\PS.ShoppingService.Data.csproj" />
+  </ItemGroup>
+
+</Project>

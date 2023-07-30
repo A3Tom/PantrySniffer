@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4687d485-3a89-4214-8f0f-3cb781c1a522</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PS.Common.Commands\PS.Common.Commands.csproj" />
+    <ProjectReference Include="..\PS.Common.Domain\PS.Common.Domain.csproj" />
+    <ProjectReference Include="..\PS.Common.Infrastructure\PS.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\PS.Common.Queries\PS.Common.Queries.csproj" />
+    <ProjectReference Include="..\PS.RecipeService.Application\PS.RecipeService.Application.csproj" />
+    <ProjectReference Include="..\PS.RecipeService.Data\PS.RecipeService.Data.csproj" />
+  </ItemGroup>
+
+</Project>
