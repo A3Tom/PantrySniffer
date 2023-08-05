@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "PS.IngredientService.Functions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7165"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 30770,
+      "useSSL": false
+    }
+  }
+}
