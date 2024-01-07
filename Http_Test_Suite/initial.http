@@ -1,0 +1,38 @@
+@baseUrl = http://localhost:7165/api
+
+### SEARCH
+POST {{baseUrl}}/Search
+
+{
+    "SearchTerm" : "Cinnamon"
+}
+
+@
+
+### GET 
+GET {{baseUrl}}/12225899-e3dd-4472-848c-012ce483b440
+
+### CREATE
+POST {{baseUrl}}/Create
+
+{
+    "Name" : "Cinnamon22",
+    "Type" : 2,
+    "ImageUrl" : "https://rgpantryconceptb54c.blob.core.windows.net/images/olive-oil.png"
+}
+
+
+### UPDATE
+PUT {{baseUrl}}/11d59be4-5634-4fa8-8103-cc8172f38c58
+
+{
+    "Id" : "11d59be4-5634-4fa8-8103-cc8172f38c58",
+    "Name" : "12312223331233",
+    "Type" : 23,
+    "ImageUrl" : "awd"
+}
+
+### LIST 
+@ingredientType = 29
+
+GET {{baseUrl}}/ListByType/{{ingredientType}}
