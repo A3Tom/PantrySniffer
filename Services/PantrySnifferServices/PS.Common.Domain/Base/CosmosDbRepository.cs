@@ -93,7 +93,7 @@ public abstract class CosmosDbRepository
             var container = await BuildContainerInstance(_cosmosClient, _databaseName, _containerName);
 
             QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.Type = @ingredientType")
-                .WithParameter("@ingredientType", ingredientType.ToString());
+                .WithParameter("@ingredientType", ingredientType);
 
             FeedIterator<T> resultSetIterator = container.GetItemQueryIterator<T>(query);
 

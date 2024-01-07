@@ -50,7 +50,7 @@ public class IngredientFunctions
 
     [FunctionName(nameof(Create))]
     public async Task<IActionResult> Create(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "POST")] UpsertIngredientCommand request,
+        [HttpTrigger(AuthorizationLevel.Anonymous, "POST", Route = "")] UpsertIngredientCommand request,
         ILogger log)
     {
         log.LogInformation($"{nameof(Create)} triggered with {request.Id}");
@@ -67,7 +67,7 @@ public class IngredientFunctions
 
     [FunctionName(nameof(Update))]
     public async Task<IActionResult> Update(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "PUT")] UpsertIngredientCommand request,
+        [HttpTrigger(AuthorizationLevel.Anonymous, "PUT", Route = "{ingredientId}")] UpsertIngredientCommand request,
         ILogger log)
     {
         log.LogInformation($"{nameof(Create)} triggered with {request.Id}");
